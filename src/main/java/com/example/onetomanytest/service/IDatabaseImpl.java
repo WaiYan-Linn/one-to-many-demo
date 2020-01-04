@@ -34,7 +34,9 @@ public class IDatabaseImpl implements  IDatabase {
         Product product4 = new Product("Fish",23,2000);
 
         product1.setCategory(c1);
-        product2.setCategory(c2);
+        product2.setCategory(c1);
+        product3.setCategory(c2);
+        product4.setCategory(c2);
 
         categoryRepository.save(c1);
         categoryRepository.save(c2);
